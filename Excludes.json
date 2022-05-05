@@ -1,0 +1,9 @@
+{
+    "Excludes": [
+      {"\\PRODUCTION": "true"},
+      {"\\UAT": "True"},
+      {"\\DEVELOPMENT": "true"},
+      {"\\SCRATCH": "true"},
+      {"\\TEST": "true"}
+    ]
+  }

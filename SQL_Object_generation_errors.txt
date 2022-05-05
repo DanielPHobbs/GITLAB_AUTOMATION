@@ -1,0 +1,48 @@
+03/05/2022 19:54:54	Script SCORCH_PS_Wrapper_64.ps1 version 1 now executing @ 03/05/2022 19:54:54 in PowerShell version [5.1.17763.2268] session in a [64] bit process 
+03/05/2022 19:54:54	Running as user [DTEK\svc-orch2016-rs] on host [DTEKORCH22-S1] 
+03/05/2022 19:54:54	Loading Required PS Modules and Assemblies 
+03/05/2022 19:55:04	Adding User Tables Objects....continuing 
+03/05/2022 19:55:04	Adding View Objects....continuing 
+03/05/2022 19:55:05	Adding Stored Procedure Objects....continuing 
+03/05/2022 19:55:05	Adding User Defined Function Objects....continuing 
+03/05/2022 19:58:04	Setting Options....continuing 
+03/05/2022 19:58:04	Creating Type Folders....continuing 
+03/05/2022 19:58:04	Checking Folder Table exists 
+03/05/2022 19:58:04	Creating Folder Table 
+03/05/2022 19:58:09	!!!!!Exception In Script!!!!! 
+03/05/2022 19:58:09	Error Message  --  Exception calling "Script" with "1" argument(s): "The Table '[dbo].[AWBuildVersion]' cannot be scripted as its data is not accessible."  
+03/05/2022 19:58:09	Inner Error Message  --  Microsoft.SqlServer.Management.Smo.FailedOperationException: The Table '[dbo].[AWBuildVersion]' cannot be scripted as its data is not accessible. ---> Microsoft.SqlServer.Management.Smo.PropertyCannotBeRetrievedException: Property Text is not available for DefaultConstraint '[DF_AWBuildVersion_ModifiedDate]'. This property may not exist for this object, or may not be retrievable due to insufficient access rights.
+   at Microsoft.SqlServer.Management.Smo.ScriptNameObjectBase.GetTextProperty(String requestingProperty, ScriptingPreferences sp, Boolean bThrowIfCreating)
+   at Microsoft.SqlServer.Management.Smo.DefaultConstraint.ScriptDdl(ScriptingPreferences sp)
+   at Microsoft.SqlServer.Management.Smo.DefaultConstraint.ScriptCreate(StringCollection queries, ScriptingPreferences sp)
+   at Microsoft.SqlServer.Management.Smo.SqlSmoObject.ScriptCreateInternal(StringCollection query, ScriptingPreferences sp, Boolean skipPropagateScript)
+   at Microsoft.SqlServer.Management.Smo.ScriptMaker.ScriptCreateObject(Urn urn, ScriptingPreferences sp, ObjectScriptingType& scriptType)
+   at Microsoft.SqlServer.Management.Smo.ScriptMaker.ScriptCreate(Urn urn, ScriptingPreferences sp, ObjectScriptingType& scriptType)
+   at Microsoft.SqlServer.Management.Smo.ScriptMaker.ScriptCreateObjects(IEnumerable`1 urns)
+   at Microsoft.SqlServer.Management.Smo.ScriptMaker.ScriptUrns(List`1 orderedUrns)
+   at Microsoft.SqlServer.Management.Smo.ScriptMaker.DiscoverOrderScript(IEnumerable`1 urns)
+   at Microsoft.SqlServer.Management.Smo.ScriptMaker.ScriptWorker(List`1 urns, ISmoScriptWriter writer)
+   at Microsoft.SqlServer.Management.Smo.Scripter.ScriptWithListWorker(DependencyCollection depList, SqlSmoObject[] objects, Boolean discoveryRequired)
+   at Microsoft.SqlServer.Management.Smo.Scripter.ScriptWithList(DependencyCollection depList, SqlSmoObject[] objects, Boolean discoveryRequired)
+   --- End of inner exception stack trace ---
+   at Microsoft.SqlServer.Management.Smo.Scripter.ScriptWithList(DependencyCollection depList, SqlSmoObject[] objects, Boolean discoveryRequired)
+   at Microsoft.SqlServer.Management.Smo.Scripter.ScriptWithList(Urn[] urns, SqlSmoObject[] objects)
+   at Microsoft.SqlServer.Management.Smo.Scripter.Script(Urn[] urns, SqlSmoObject[] objects)
+   at Microsoft.SqlServer.Management.Smo.Scripter.Script(SqlSmoObject[] objects)
+   at CallSite.Target(Closure , CallSite , Object , Object )  
+03/05/2022 19:58:09	Err Command -- [    $scriptr.Script($SQLObject)] on Line 130 
+03/05/2022 19:58:09	Exiting Powershell session with result [Failed] and error message [Exception calling "Script" with "1" argument(s): "The Table '[dbo].[AWBuildVersion]' cannot be scripted as its data is not accessible."], script runtime: 194.7706225 seconds @ 03/05/2022 19:54:54
+
+
+
+
+Exception calling "Script" with "1" argument(s): "The Table '[dbo].[AWBuildVersion]' cannot be scripted as its data is not accessible."
+
+
+
+
+
+
+USE AdventureWorks2017
+GO 
+GRANT VIEW ANY DEFINITION TO Rajendra

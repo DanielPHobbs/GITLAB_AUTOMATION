@@ -1,0 +1,18 @@
+cd 'G:\GITLAB_REPOS\gitlab_repo1'
+
+git remote -v
+
+git remote add upstream https://gitlab.com/Dannyphobbs/gitlab_repo1.git
+
+git remote remove origin
+
+
+
+git fetch upstream
+
+
+git merge upstream/Main
+
+---Push your local changes to your repository
+
+git push upstream Main

@@ -1,0 +1,34 @@
+[
+    {
+        "Name":  "2.0_RB1_Export-SCO-Tests.ois_export",
+        "BaseName":  "2.0_RB1_Export-SCO-Tests",
+        "Extension":  ".ois_export",
+        "DirectoryName":  "\\\\DTEKSRV2022\\FileDrop",
+        "CreationTime":  "\/Date(1649765538853)\/",
+        "LastWriteTime":  "\/Date(1645610252517)\/"
+    },
+    {
+        "Name":  "2.0_RB1_test 1.sql",
+        "BaseName":  "2.0_RB1_test 1",
+        "Extension":  ".sql",
+        "DirectoryName":  "\\\\DTEKSRV2022\\FileDrop",
+        "CreationTime":  "\/Date(1649765485485)\/",
+        "LastWriteTime":  "\/Date(1649764809921)\/"
+    },
+    {
+        "Name":  "2.0_RB1_test 2.sql",
+        "BaseName":  "2.0_RB1_test 2",
+        "Extension":  ".sql",
+        "DirectoryName":  "\\\\DTEKSRV2022\\FileDrop",
+        "CreationTime":  "\/Date(1649765391362)\/",
+        "LastWriteTime":  "\/Date(1649764809921)\/"
+    },
+    {
+        "Name":  "2.0_RB1_test 3.sql",
+        "BaseName":  "2.0_RB1_test 3",
+        "Extension":  ".sql",
+        "DirectoryName":  "\\\\DTEKSRV2022\\FileDrop",
+        "CreationTime":  "\/Date(1649765461287)\/",
+        "LastWriteTime":  "\/Date(1649764809921)\/"
+    }
+]
